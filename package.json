@@ -2,7 +2,7 @@
   "name": "caffeine-lang",
   "displayName": "Caffeine Language",
   "description": "Syntax highlighting for the Caffeine programming language",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "BrickellResearch",
   "license": "MIT",
   "repository": {

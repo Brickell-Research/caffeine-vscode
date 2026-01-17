@@ -1,0 +1,10 @@
+{
+  "iconDefinitions": {
+    "caffeine": {
+      "iconPath": "./caffeine.svg"
+    }
+  },
+  "fileExtensions": {
+    "caffeine": "caffeine"
+  }
+}

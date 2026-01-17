@@ -2,9 +2,10 @@
   "name": "caffeine-lang",
   "displayName": "Caffeine Language",
   "description": "Syntax highlighting for the Caffeine programming language",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "publisher": "BrickellResearch",
   "license": "MIT",
+  "icon": "icons/caffeine.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/caffeine-lang/caffeine-vscode"
@@ -16,6 +17,13 @@
     "Programming Languages"
   ],
   "contributes": {
+    "iconThemes": [
+      {
+        "id": "caffeine-icons",
+        "label": "Caffeine Icons",
+        "path": "./icons/caffeine-icon-theme.json"
+      }
+    ],
     "languages": [
       {
         "id": "caffeine",

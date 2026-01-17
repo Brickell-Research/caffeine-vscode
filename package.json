@@ -1,0 +1,40 @@
+{
+  "name": "caffeine",
+  "displayName": "Caffeine",
+  "description": "Syntax highlighting for the Caffeine programming language",
+  "version": "0.1.0",
+  "publisher": "caffeine-lang",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/caffeine-lang/caffeine-vscode"
+  },
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "caffeine",
+        "aliases": [
+          "Caffeine",
+          "caffeine"
+        ],
+        "extensions": [
+          ".caffeine"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "caffeine",
+        "scopeName": "source.caffeine",
+        "path": "./syntaxes/caffeine.tmLanguage.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Caffeine",
+  "scopeName": "source.caffeine",
+  "fileTypes": ["caffeine"],
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#extendable" },
+    { "include": "#blocks" },
+    { "include": "#keywords" },
+    { "include": "#types" },
+    { "include": "#strings" },
+    { "include": "#numbers" },
+    { "include": "#booleans" },
+    { "include": "#operators" },
+    { "include": "#punctuation" },
+    { "include": "#identifiers" }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.number-sign.section.caffeine",
+          "match": "##.*$"
+        },
+        {
+          "name": "comment.line.number-sign.caffeine",
+          "match": "#.*$"
+        }
+      ]
+    },
+    "extendable": {
+      "patterns": [
+        {
+          "name": "entity.name.function.extendable.caffeine",
+          "match": "(_[a-zA-Z_][a-zA-Z0-9_]*)(?=\\s*\\()"
+        },
+        {
+          "name": "variable.other.extendable.caffeine",
+          "match": "_[a-zA-Z_][a-zA-Z0-9_]*"
+        }
+      ]
+    },
+    "blocks": {
+      "patterns": [
+        {
+          "name": "keyword.control.blueprints.caffeine",
+          "match": "\\bBlueprints\\b"
+        },
+        {
+          "name": "keyword.control.expectations.caffeine",
+          "match": "\\bExpectations\\b"
+        },
+        {
+          "name": "keyword.control.expects.caffeine",
+          "match": "\\bExpects\\b"
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.caffeine",
+          "match": "\\b(for|extends|in)\\b"
+        },
+        {
+          "name": "keyword.other.requires.caffeine",
+          "match": "\\bRequires\\b"
+        },
+        {
+          "name": "keyword.other.provides.caffeine",
+          "match": "\\bProvides\\b"
+        },
+        {
+          "name": "variable.language.refinement.caffeine",
+          "match": "\\bx\\b"
+        }
+      ]
+    },
+    "types": {
+      "patterns": [
+        {
+          "name": "support.type.primitive.caffeine",
+          "match": "\\b(String|Integer|Float|Boolean)\\b"
+        },
+        {
+          "name": "support.type.collection.caffeine",
+          "match": "\\b(List|Dict)\\b"
+        },
+        {
+          "name": "support.type.modifier.caffeine",
+          "match": "\\b(Optional|Defaulted)\\b"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.caffeine",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.caffeine",
+          "match": "\\\\."
+        },
+        {
+          "name": "variable.other.template.caffeine",
+          "match": "\\$[a-zA-Z_][a-zA-Z0-9_]*(?:->[-a-zA-Z_][a-zA-Z0-9_.]*)?\\$"
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.float.caffeine",
+          "match": "-?\\b[0-9]+\\.[0-9]+\\b"
+        },
+        {
+          "name": "constant.numeric.integer.caffeine",
+          "match": "-?\\b[0-9]+\\b"
+        }
+      ]
+    },
+    "booleans": {
+      "name": "constant.language.boolean.caffeine",
+      "match": "\\b(true|false)\\b"
+    },
+    "operators": {
+      "patterns": [
+        {
+          "name": "keyword.operator.range.caffeine",
+          "match": "\\.\\."
+        },
+        {
+          "name": "keyword.operator.logical.caffeine",
+          "match": "\\|"
+        },
+        {
+          "name": "keyword.operator.assignment.caffeine",
+          "match": "="
+        },
+        {
+          "name": "keyword.operator.arithmetic.caffeine",
+          "match": "\\+"
+        }
+      ]
+    },
+    "punctuation": {
+      "patterns": [
+        {
+          "name": "punctuation.definition.item.caffeine",
+          "match": "\\*"
+        },
+        {
+          "name": "punctuation.separator.colon.caffeine",
+          "match": ":"
+        },
+        {
+          "name": "punctuation.separator.comma.caffeine",
+          "match": ","
+        },
+        {
+          "name": "punctuation.section.braces.begin.caffeine",
+          "match": "\\{"
+        },
+        {
+          "name": "punctuation.section.braces.end.caffeine",
+          "match": "\\}"
+        },
+        {
+          "name": "punctuation.section.parens.begin.caffeine",
+          "match": "\\("
+        },
+        {
+          "name": "punctuation.section.parens.end.caffeine",
+          "match": "\\)"
+        },
+        {
+          "name": "punctuation.section.brackets.begin.caffeine",
+          "match": "\\["
+        },
+        {
+          "name": "punctuation.section.brackets.end.caffeine",
+          "match": "\\]"
+        }
+      ]
+    },
+    "identifiers": {
+      "name": "variable.other.caffeine",
+      "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+    }
+  }
+}

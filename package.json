@@ -1,8 +1,8 @@
 {
   "name": "caffeine-lang",
   "displayName": "Caffeine Language",
-  "description": "Syntax highlighting for the Caffeine programming language",
-  "version": "0.1.2",
+  "description": "Language support for the Caffeine programming language",
+  "version": "0.2.0",
   "publisher": "BrickellResearch",
   "license": "MIT",
   "icon": "icons/caffeine.png",
@@ -16,6 +16,8 @@
   "categories": [
     "Programming Languages"
   ],
+  "main": "./out/extension.js",
+  "activationEvents": [],
   "contributes": {
     "iconThemes": [
       {
@@ -43,6 +45,42 @@
         "scopeName": "source.caffeine",
         "path": "./syntaxes/caffeine.tmLanguage.json"
       }
+    ],
+    "configuration": {
+      "title": "Caffeine",
+      "properties": {
+        "caffeine.serverPath": {
+          "type": "string",
+          "default": "",
+          "description": "Path to the caffeine binary. Uses PATH by default."
+        },
+        "caffeine.trace.server": {
+          "type": "string",
+          "enum": ["off", "messages", "verbose"],
+          "default": "off",
+          "description": "Traces communication between VS Code and the Caffeine language server."
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "caffeine.restartServer",
+        "title": "Restart Language Server",
+        "category": "Caffeine"
+      }
     ]
+  },
+  "dependencies": {
+    "vscode-languageclient": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.75.0",
+    "typescript": "^5.0.0",
+    "@vscode/vsce": "^2.22.0"
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
   }
 }

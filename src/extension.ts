@@ -1,3 +1,4 @@
+import * as fs from "fs";
 import * as vscode from "vscode";
 import {
   LanguageClient,
@@ -7,9 +8,26 @@ import {
 
 let client: LanguageClient | undefined;
 
-export function activate(context: vscode.ExtensionContext) {
+function findCaffeineBinary(): string {
   const config = vscode.workspace.getConfiguration("caffeine");
-  const command = config.get<string>("serverPath") || "caffeine";
+  const configuredPath = config.get<string>("serverPath");
+
+  if (configuredPath) {
+    return configuredPath;
+  }
+
+  // Check common Homebrew locations
+  const homebrewPaths = [
+    "/opt/homebrew/bin/caffeine", // Apple Silicon
+    "/usr/local/bin/caffeine", // Intel
+  ];
+
+  const found = homebrewPaths.find((p) => fs.existsSync(p));
+  return found || "caffeine";
+}
+
+export function activate(context: vscode.ExtensionContext) {
+  const command = findCaffeineBinary();
 
   const serverOptions: ServerOptions = {
     command,

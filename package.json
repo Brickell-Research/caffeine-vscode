@@ -2,7 +2,7 @@
   "name": "caffeine-lang",
   "displayName": "Caffeine Language",
   "description": "Language support for the Caffeine programming language",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "publisher": "BrickellResearch",
   "license": "MIT",
   "icon": "icons/caffeine.png",

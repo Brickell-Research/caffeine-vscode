@@ -23,7 +23,7 @@
     "indentationRules": {}
   },
   "indentationRules": {
-    "increaseIndentPattern": "^\\s*(Blueprints|Expectations|Expects|Requires|Provides|\\*).*:\\s*$",
+    "increaseIndentPattern": "^\\s*(Blueprints|Expectations|Expects|Requires|Provides|Type|\\*).*:\\s*$",
     "decreaseIndentPattern": "^\\s*\\}"
   }
 }

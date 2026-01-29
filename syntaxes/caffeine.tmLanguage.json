@@ -72,6 +72,10 @@
           "match": "\\bProvides\\b"
         },
         {
+          "name": "keyword.other.type.caffeine",
+          "match": "\\bType\\b"
+        },
+        {
           "name": "variable.language.refinement.caffeine",
           "match": "\\bx\\b"
         }

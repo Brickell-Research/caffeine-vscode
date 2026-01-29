@@ -85,7 +85,7 @@
       "patterns": [
         {
           "name": "support.type.primitive.caffeine",
-          "match": "\\b(String|Integer|Float|Boolean)\\b"
+          "match": "\\b(String|Integer|Float|Boolean|URL)\\b"
         },
         {
           "name": "support.type.collection.caffeine",

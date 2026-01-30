@@ -56,7 +56,11 @@
         },
         "caffeine.trace.server": {
           "type": "string",
-          "enum": ["off", "messages", "verbose"],
+          "enum": [
+            "off",
+            "messages",
+            "verbose"
+          ],
           "default": "off",
           "description": "Traces communication between VS Code and the Caffeine language server."
         }
@@ -68,15 +72,22 @@
         "title": "Restart Language Server",
         "category": "Caffeine"
       }
-    ]
+    ],
+    "configurationDefaults": {
+      "[caffeine]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "BrickellResearch.caffeine-lang"
+      }
+    }
   },
   "dependencies": {
     "vscode-languageclient": "^9.0.1"
   },
   "devDependencies": {
+    "@types/node": "^25.1.0",
     "@types/vscode": "^1.75.0",
-    "typescript": "^5.0.0",
-    "@vscode/vsce": "^2.22.0"
+    "@vscode/vsce": "^2.22.0",
+    "typescript": "^5.0.0"
   },
   "scripts": {
     "compile": "tsc -p ./",

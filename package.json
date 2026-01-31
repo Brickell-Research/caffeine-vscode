@@ -2,7 +2,7 @@
   "name": "caffeine-lang",
   "displayName": "Caffeine Language",
   "description": "Language support for the Caffeine programming language",
-  "version": "1.2.7",
+  "version": "1.2.8",
   "publisher": "BrickellResearch",
   "license": "MIT",
   "icon": "icons/caffeine.png",
@@ -71,6 +71,24 @@
         "command": "caffeine.restartServer",
         "title": "Restart Language Server",
         "category": "Caffeine"
+      }
+    ],
+    "semanticTokenScopes": [
+      {
+        "language": "caffeine",
+        "scopes": {
+          "keyword": ["keyword.control.caffeine"],
+          "type": ["support.type.primitive.caffeine"],
+          "string": ["string.quoted.double.caffeine"],
+          "number": ["constant.numeric.integer.caffeine"],
+          "variable": ["variable.other.caffeine"],
+          "comment": ["comment.line.number-sign.caffeine"],
+          "operator": ["keyword.operator.range.caffeine"],
+          "property": ["support.type.property-name.caffeine"],
+          "function": ["entity.name.function.extendable.caffeine"],
+          "modifier": ["support.type.modifier.caffeine"],
+          "enumMember": ["constant.language.boolean.caffeine"]
+        }
       }
     ],
     "configurationDefaults": {

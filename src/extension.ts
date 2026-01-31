@@ -39,7 +39,7 @@ export function activate(context: vscode.ExtensionContext) {
   };
 
   client = new LanguageClient(
-    "caffeine-language-server",
+    "caffeine",
     "Caffeine Language Server",
     serverOptions,
     clientOptions

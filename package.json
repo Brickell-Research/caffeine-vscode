@@ -81,7 +81,7 @@
           "type": ["support.type.primitive.caffeine"],
           "string": ["string.quoted.double.caffeine"],
           "number": ["constant.numeric.integer.caffeine"],
-          "variable": ["variable.other.caffeine"],
+          "variable": ["entity.name.variable.extendable.caffeine"],
           "comment": ["comment.line.number-sign.caffeine"],
           "operator": ["keyword.operator.range.caffeine"],
           "property": ["support.type.property-name.caffeine"],

@@ -64,15 +64,15 @@
           "match": "\\b(for|extends|in)\\b"
         },
         {
-          "name": "keyword.other.requires.caffeine",
+          "name": "keyword.control.requires.caffeine",
           "match": "\\bRequires\\b"
         },
         {
-          "name": "keyword.other.provides.caffeine",
+          "name": "keyword.control.provides.caffeine",
           "match": "\\bProvides\\b"
         },
         {
-          "name": "keyword.other.type.caffeine",
+          "name": "keyword.control.type.caffeine",
           "match": "\\bType\\b"
         },
         {

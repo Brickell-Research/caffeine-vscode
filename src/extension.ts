@@ -31,7 +31,7 @@ export function activate(context: vscode.ExtensionContext) {
 
   const serverOptions: ServerOptions = {
     command,
-    args: ["lsp"],
+    args: ["lsp", "--stdio"],
   };
 
   const clientOptions: LanguageClientOptions = {

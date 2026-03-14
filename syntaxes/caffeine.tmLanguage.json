@@ -44,16 +44,12 @@
     "blocks": {
       "patterns": [
         {
-          "name": "keyword.control.blueprints.caffeine",
-          "match": "\\bBlueprints\\b"
-        },
-        {
           "name": "keyword.control.expectations.caffeine",
           "match": "\\bExpectations\\b"
         },
         {
-          "name": "keyword.control.expects.caffeine",
-          "match": "\\bExpects\\b"
+          "name": "keyword.control.unmeasured.caffeine",
+          "match": "\\bUnmeasured\\b"
         }
       ]
     },
@@ -61,7 +57,7 @@
       "patterns": [
         {
           "name": "keyword.control.caffeine",
-          "match": "\\b(for|extends|in)\\b"
+          "match": "\\b(measured|by|extends|in)\\b"
         },
         {
           "name": "keyword.control.requires.caffeine",
@@ -143,8 +139,8 @@
           "match": "="
         },
         {
-          "name": "keyword.operator.arithmetic.caffeine",
-          "match": "\\+"
+          "name": "constant.numeric.percentage.caffeine",
+          "match": "-?\\b[0-9]+\\.?[0-9]*%"
         }
       ]
     },

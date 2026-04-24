@@ -1,0 +1,25 @@
+src/extension.ts
+  72bb987d8eb99784 2-3,21-24,27
+package.json
+  72bb987d8eb99784 5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.2",
+  "base_commit_sha": "0a5fa6406df8c5f6943d1e9c3949d3d254234697",
+  "prompts": {
+    "72bb987d8eb99784": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28203a35-58a2-4975-b243-b9bb2cc4369f",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "robertDurst",
+      "messages": [],
+      "total_additions": 8,
+      "total_deletions": 6,
+      "accepted_lines": 8,
+      "overriden_lines": 0
+    }
+  }
+}

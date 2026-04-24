@@ -1,4 +1,6 @@
 import * as fs from "fs";
+import * as os from "os";
+import * as path from "path";
 import * as vscode from "vscode";
 import {
   LanguageClient,
@@ -16,13 +18,13 @@ function findCaffeineBinary(): string {
     return configuredPath;
   }
 
-  // Check common Homebrew locations
-  const homebrewPaths = [
-    "/opt/homebrew/bin/caffeine", // Apple Silicon
-    "/usr/local/bin/caffeine", // Intel
+  const knownPaths = [
+    path.join(os.homedir(), ".cvm", "current", "caffeine"), // CVM
+    "/opt/homebrew/bin/caffeine", // Homebrew Apple Silicon
+    "/usr/local/bin/caffeine", // Homebrew Intel
   ];
 
-  const found = homebrewPaths.find((p) => fs.existsSync(p));
+  const found = knownPaths.find((p) => fs.existsSync(p));
   return found || "caffeine";
 }
 

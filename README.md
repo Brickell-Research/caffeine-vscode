@@ -25,7 +25,7 @@ If you installed Caffeine somewhere nonstandard, point the extension at it via t
 
 | Setting | Description | Default |
 |---|---|---|
-| `caffeine.serverPath` | Path to the `caffeine` binary. Leave empty to auto-detect from Homebrew or PATH. | `""` |
+| `caffeine.serverPath` | Path to the `caffeine` binary. Leave empty to auto-detect from CVM, Homebrew, or PATH. | `""` |
 | `caffeine.trace.server` | Trace LSP communication between VS Code and the language server. Useful for debugging. | `"off"` |
 
 The `trace.server` setting accepts `"off"`, `"messages"`, or `"verbose"`. If something looks off with the language server, flip it to `"verbose"` and check the output panel.
@@ -41,8 +41,9 @@ The `trace.server` setting accepts `"off"`, `"messages"`, or `"verbose"`. If som
 You need the Caffeine binary installed. The extension looks for it in this order:
 
 1. Custom path from `caffeine.serverPath` (if set)
-2. Homebrew -- `/opt/homebrew/bin/caffeine` (Apple Silicon) or `/usr/local/bin/caffeine` (Intel)
-3. System `PATH`
+2. CVM -- `~/.cvm/current/caffeine`
+3. Homebrew -- `/opt/homebrew/bin/caffeine` (Apple Silicon) or `/usr/local/bin/caffeine` (Intel)
+4. System `PATH`
 
 Requires VS Code 1.75+.
 

@@ -23,7 +23,7 @@
     "indentationRules": {}
   },
   "indentationRules": {
-    "increaseIndentPattern": "^\\s*(Expectations|Unmeasured|Requires|Provides|Type|\\*).*:\\s*$",
+    "increaseIndentPattern": "^\\s*(Assumes|Requires|Provides|Type|\".+\"(\\s+(success_rate|time_slice))?(\\s+extends\\s+\\[[^\\]]*\\])?|_[A-Za-z_][A-Za-z0-9_]*\\s*\\([A-Za-z]+\\)).*:\\s*$",
     "decreaseIndentPattern": "^\\s*\\}"
   }
 }

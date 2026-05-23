@@ -2,7 +2,7 @@
   "name": "caffeine-lang",
   "displayName": "Caffeine Language",
   "description": "Language support for the Caffeine programming language",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "publisher": "BrickellResearch",
   "license": "MIT",
   "icon": "icons/caffeine.png",
@@ -77,17 +77,39 @@
       {
         "language": "caffeine",
         "scopes": {
-          "keyword": ["keyword.control.caffeine"],
-          "type": ["support.type.primitive.caffeine"],
-          "string": ["string.quoted.double.caffeine"],
-          "number": ["constant.numeric.integer.caffeine"],
-          "variable": ["entity.name.variable.extendable.caffeine"],
-          "comment": ["comment.line.number-sign.caffeine"],
-          "operator": ["keyword.operator.range.caffeine"],
-          "property": ["support.type.property-name.caffeine"],
-          "function": ["entity.name.function.extendable.caffeine"],
-          "modifier": ["support.type.modifier.caffeine"],
-          "enumMember": ["constant.language.boolean.caffeine"]
+          "keyword": [
+            "keyword.control.caffeine"
+          ],
+          "type": [
+            "support.type.primitive.caffeine"
+          ],
+          "string": [
+            "string.quoted.double.caffeine"
+          ],
+          "number": [
+            "constant.numeric.integer.caffeine"
+          ],
+          "variable": [
+            "entity.name.variable.extendable.caffeine"
+          ],
+          "comment": [
+            "comment.line.number-sign.caffeine"
+          ],
+          "operator": [
+            "keyword.operator.range.caffeine"
+          ],
+          "property": [
+            "support.type.property-name.caffeine"
+          ],
+          "function": [
+            "entity.name.function.extendable.caffeine"
+          ],
+          "modifier": [
+            "support.type.modifier.caffeine"
+          ],
+          "enumMember": [
+            "constant.language.boolean.caffeine"
+          ]
         }
       }
     ],

@@ -1,0 +1,14 @@
+package.json
+  h_55b93de7ce5e50 5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.11",
+  "base_commit_sha": "e70937c347afb4a1b6ebc4f0dc5fa5b72a43ab7c",
+  "prompts": {},
+  "humans": {
+    "h_55b93de7ce5e50": {
+      "author": "robertDurst <me@robdurst.com>"
+    }
+  }
+}

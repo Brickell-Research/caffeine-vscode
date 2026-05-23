@@ -58,6 +58,10 @@
           "match": "\\b(over|window|as|measured|by|with|below|on)\\b"
         },
         {
+          "name": "keyword.control.external_indicator.caffeine",
+          "match": "\\b(from|where|and)\\b"
+        },
+        {
           "name": "keyword.control.dependency.caffeine",
           "match": "\\b(hard|soft)\\s+dependency\\b"
         },
@@ -129,8 +133,9 @@
           "match": "\\\\."
         },
         {
+          "comment": "Template variable: $$var$$ or $$header->var$$ or $$header->var:not$$",
           "name": "variable.other.template.caffeine",
-          "match": "\\$[a-zA-Z_][a-zA-Z0-9_]*(?:->[-a-zA-Z_][a-zA-Z0-9_.]*)?\\$"
+          "match": "\\$\\$[a-zA-Z_][a-zA-Z0-9_]*(?:->[-a-zA-Z_][a-zA-Z0-9_.]*)?(?::not)?\\$\\$"
         }
       ]
     },
